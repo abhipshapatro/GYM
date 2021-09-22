@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha's Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background:  url('img/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    .left {
+        position: absolute;
+        left: 38px;
+        top: 15px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+
+        width: 111px;
+    }
+
+    .left div {
+        line-height: 21px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .right {
+        position: absolute;
+        right: 32px;
+        top: 29px;
+        display: inline-block;
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 24px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(51, 53, 53);
+    }
+
+    .container {
+        border: 2px solid #f1f1ec;
+        margin: 137px 362px;
+        padding: 35px 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 360px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 9px auto;
+        font-size: 16px;
+        border-radius: 7px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- leftbox for logo -->
+        <div class="left">
+            <img src="img/logo.png.webp" alt="">
+            <div>Isha Fitness</div>
+        </div>
+        <!-- midbox for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Fitness Centre</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in town</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
